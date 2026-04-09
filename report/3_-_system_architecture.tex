@@ -1,0 +1,57 @@
+\chapter{TYPE INFERENCE ALGORITHM}
+
+\section{Overview}
+% TODO: Explain what type inference means in this context.
+% No explicit type annotations --- the compiler infers types
+% from usage (literals, operations, assignments).
+
+\section{Type Environment}
+% TODO: Define the type environment (symbol table) \Gamma:
+%   \Gamma : Identifier -> Type
+% Explain how it is built up during parsing/checking.
+
+\section{Inference Rules}
+
+\subsection{Literals}
+% TODO: Inference rules for integer, float, boolean, string literals.
+%   e.g.  \Gamma |- 42 : Integer
+%         \Gamma |- 3.14 : Float
+%         \Gamma |- true : Boolean
+%         \Gamma |- "hi" : String
+
+\subsection{Arithmetic Expressions}
+% TODO: Inference rules for +, -, *, /
+% Cover both Integer and Float cases.
+% Note: no overloading --- operands must have the same type.
+
+\subsection{Boolean Expressions}
+% TODO: Inference rules for == and !=
+% Both sides must be arithmetic expressions of the same type.
+% Result type is always Boolean.
+
+\subsection{Assignment Statement}
+% TODO: Inference rule for x = expr
+% If x not in \Gamma: infer type from expr and add to \Gamma.
+% If x in \Gamma: check that expr type matches stored type.
+
+\subsection{If-Then-Else}
+% TODO: Inference rule for if-then-else.
+% Condition must be Boolean; both branches are type-checked independently.
+
+\subsection{While-Loop}
+% TODO: Inference rule for while-loop.
+% Condition must be Boolean; body is type-checked.
+
+\subsection{Function Definition and Call}
+% TODO: Inference rules for function definition (parameter types inferred
+% from body) and function call (argument types must match parameter types).
+
+\section{Type Error Reporting}
+% TODO: Describe how type errors are detected and reported to the user.
+% e.g. type mismatch in arithmetic, incompatible comparison types, etc.
+
+\section{Example Type Inference Traces}
+% TODO: Walk through 2--3 examples showing step-by-step type inference.
+% Example 1: simple arithmetic
+% Example 2: if-then-else with boolean condition
+% Example 3: function call

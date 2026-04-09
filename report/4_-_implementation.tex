@@ -1,0 +1,63 @@
+\chapter{SYSTEM ARCHITECTURE AND IMPLEMENTATION}
+
+\section{Compiler Pipeline}
+% TODO: Diagram and description of the full pipeline:
+%   Input source code
+%     -> Lexer (tokens)
+%     -> Parser (AST)
+%     -> Type Checker (annotated AST)
+%     -> Interpreter (output)
+
+\section{Project Structure}
+% TODO: Table of source files and their responsibilities.
+% e.g.
+%   main.py                    - Entry point
+%   components/lexica.py       - Lexical analyser
+%   components/parsers.py      - LALR(1) parser
+%   components/ast/            - AST node classes
+%   components/typechecker.py  - Type inference / type checker
+%   components/interpreter.py  - Tree-walking interpreter
+%   components/ui.py           - GUI (if applicable)
+
+\section{Technology Stack}
+% TODO: Table of tools/libraries:
+%   Python >= 3.10
+%   SLY (lexer and LALR(1) parser generator)
+%   PySide6 (Qt6 GUI, if applicable)
+%   uv (package manager)
+%   pytest (testing)
+
+\section{Lexical Analyser}
+% TODO: Describe PropLogicLexer (or new lexer class name).
+% Show token definitions with regex patterns.
+% Explain whitespace/comment handling and error reporting.
+
+\section{Parser}
+% TODO: Describe the LALR(1) parser.
+% Show grammar rules with semantic actions (AST node construction).
+% Show precedence declarations.
+% Include a parsing trace example.
+
+\section{Abstract Syntax Tree}
+% TODO: Describe the AST node class hierarchy.
+% Cover all node types:
+%   - Literal nodes (IntLiteral, FloatLiteral, BoolLiteral, StringLiteral)
+%   - BinaryOp (arithmetic and boolean)
+%   - Assign
+%   - IfElse
+%   - While
+%   - FunctionDef, FunctionCall
+%   - Print
+
+\section{Type Checker}
+% TODO: Describe how the type checker walks the AST and applies
+% inference rules from Chapter 3. Show key code snippets.
+
+\section{Interpreter}
+% TODO: Describe the tree-walking interpreter that evaluates the
+% type-checked AST and produces output.
+% Show how assignment, control flow, and function calls are handled.
+
+\section{Graphical User Interface}
+% TODO: Describe the GUI (if implemented).
+% Show layout and interaction flow.

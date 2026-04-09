@@ -1,0 +1,69 @@
+\chapter{LANGUAGE DESIGN AND GRAMMAR}
+
+\section{Types}
+% TODO: Describe the four primitive types supported by the language.
+
+\subsection{Integer}
+% TODO: Define Integer type, literals, range.
+
+\subsection{Float}
+% TODO: Define Float type, literals (e.g. 3.14).
+
+\subsection{Boolean}
+% TODO: Define Boolean type, literals (true / false).
+
+\subsection{String}
+% TODO: Define String type, literals (e.g. "hello").
+
+\section{Static Typing}
+% TODO: Explain static typing: types are checked at compile/parse time,
+% not at runtime. No explicit type declaration --- types are inferred.
+
+\section{Token Specification}
+% TODO: Table of all tokens with regex patterns:
+%   - INT_LITERAL, FLOAT_LITERAL, BOOL_LITERAL, STRING_LITERAL
+%   - Identifiers (variable/function names)
+%   - Arithmetic operators: +, -, *, /
+%   - Comparison operators: ==, !=
+%   - Assignment: =
+%   - Keywords: if, else, while, def, return, print
+%   - Delimiters: (, ), {, }, ,, ;
+
+\section{Context-Free Grammar}
+% TODO: Define the formal CFG:
+%   G = (V_N, V_T, P, S)
+% List all non-terminals and terminals.
+
+\subsection{Program Structure}
+% TODO: Top-level production rules (program, statement list, etc.)
+
+\subsection{Arithmetic Expressions}
+% TODO: Grammar rules for arithmetic expressions with precedence:
+%   expr   -> expr + term | expr - term | term
+%   term   -> term * factor | term / factor | factor
+%   factor -> INT_LITERAL | FLOAT_LITERAL | IDENTIFIER | ( expr )
+
+\subsection{Boolean Expressions}
+% TODO: Grammar rules for boolean expressions (equality and inequality):
+%   bool_expr -> expr == expr
+%             | expr != expr
+%             | BOOL_LITERAL
+
+\subsection{Statements}
+% TODO: Grammar rules for:
+%   - Assignment:    IDENTIFIER = expr
+%   - If-then-else:  if ( bool_expr ) { stmts } else { stmts }
+%   - While-loop:    while ( bool_expr ) { stmts }
+%   - Print:         print( expr )
+%   - Return:        return expr
+
+\subsection{Function Definitions and Calls}
+% TODO: Grammar rules for function definition (def keyword, parameter list)
+% and function call with value parameter passing.
+
+\section{Operator Precedence and Associativity}
+% TODO: Table of operator precedence levels (low to high):
+%   Level 1: == , !=   (comparison, non-associative)
+%   Level 2: + , -     (addition/subtraction, left)
+%   Level 3: * , /     (multiplication/division, left)
+% Explain how precedence is encoded in the LALR(1) parser.
